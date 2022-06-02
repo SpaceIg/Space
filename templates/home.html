@@ -6,8 +6,8 @@
 <p>Опишите свою идею которая может быть полезна нашему сервису.</p>
 <p>Это может быть любая сумасшедшая идея.</p>
 
-<form action="/action_page.php">
-  <textarea name="message" rows="10" cols="30">Идея, мысли. Просто введи текст и отправь нам ...</textarea>
+<form action="{% url 'reverse' %}">
+  <textarea name="usertext" rows="10" cols="30">Идея, мысли. Просто введи текст и отправь нам ...</textarea>
   <br><br>
   <input type="submit">
 </form>
